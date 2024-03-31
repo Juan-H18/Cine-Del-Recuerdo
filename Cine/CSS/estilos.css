@@ -1,0 +1,303 @@
+@font-face{
+    font-family: 'ZCOOLKuaile-Regular';
+    src: url(../FUENTES/ZCOOLKuaiLe-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'SignikaNegative-Regular';
+    src: url(../FUENTES/static/signikaNegative-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+    background: -webkit-linear-gradient(132deg, #bbb8b5,#6d625c,#410a14);/* Chrome 10-25, Safari 5.1-6 */     
+    background: linear-gradient(132deg, #bbb8b5,#6d625c,#410a14);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                
+
+}
+
+  /*navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ed0b0e;
+    border-radius: 0px 0px 50px 50px;
+    opacity: 0.8; 
+    color: white;
+    padding: 10px 20px;
+}
+  
+.navbar img {
+    height: 120px; 
+    margin-left: 40px;
+}
+  
+.navbar-titulo {
+    font-size: 30px;
+    font-family: 'ZCOOLKuaile-Regular';
+}
+  
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 40px;
+}
+  
+.barra-busqueda input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-right: 40px;
+}
+  
+.barra-busqueda .boton {
+    margin-bottom: 0;
+
+}
+
+.navbar-botones {
+    display: flex;
+    gap: 10px;
+}
+
+.boton {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.boton:hover {
+    background-color: #555;
+}
+
+
+/* botones 2022 y 2023 */
+
+.contenedor {
+    height: 76.9vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+    
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #fff;
+}
+.año{
+    width: 500px;
+    height: 200px;
+    background-color: #ed0b0e;  
+    font-family: 'ZCOOLKuaile-Regular';  
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px 100px 50px 100px;
+    margin-top: -30px;
+    margin-bottom: -50px;
+    border-top: 10px #410a14 solid;
+    border-left: 10px #410a14 solid;
+    text-decoration: none;
+}
+.año a {
+    margin: auto;
+    font-size: 90px;
+}
+.año a :hover{
+    color: #bbb8b5;
+}
+
+/* categorias */
+
+.titulo{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'ZCOOLKuaile-Regular';
+    margin-top: -20px;  
+}
+
+.contenedor-generos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-rows: auto;
+    row-gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.generos{
+    width: 500px;
+    height: 100px;
+    background-color: #ed0b0e;  
+    font-family: 'ZCOOLKuaile-Regular';  
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px 100px 50px 100px;
+    border-top: 10px #410a14 solid;
+    border-left: 10px #410a14 solid;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    width: 300px;
+    height: 500px;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    margin: 40px;
+}
+.tarjeta img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.tarjeta_texto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(37, 37, 39, 0.75);
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    height: 100%;
+    color: #f0f0f0;
+    font-family: 'SignikaNegative-Regular';
+}
+
+.tarjeta_texto h2 {
+    margin-top: 40px;
+}
+
+.tarjeta_texto p {
+    text-align: justify;
+    margin: 30px;
+}
+
+.tarjeta_texto h4 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    margin: 30px;
+}
+.tarjeta_texto span {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    margin: 30px;
+}
+  
+  
+.tarjeta:hover {
+    transform: scale(1.3);
+}
+  
+.tarjeta:hover .tarjeta_texto {
+    transform: translateY(0);
+}
+
+.contenedor-tarjetas{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    gap:30px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    text-align: center;
+    margin: auto;
+}
+
+/* Registro e Inicio de Sesión */
+
+.contenedor3{
+    width: 100%;
+    height: 880px;
+    display: flex;
+    text-align: center;
+}
+
+.contenedor_registro{
+    width: 40%;
+    background:#ed0b0e;
+    padding: 25px;
+    margin: auto;
+    margin-top: 100px ;
+    color: white;
+    box-shadow: 20px 25px 30px rgba(37, 37, 39, 0.75);
+    text-align: center;
+    border-radius: 50px;
+    
+}
+
+.inputs::placeholder {
+    color: #6d625c;
+    font-size: 20px; 
+    text-align: center; 
+    font-family: 'SignikaNegative-Regular';
+}
+
+.inputs{
+    width: 70%;
+    height: 35px;
+    background-color: rgba(37, 37, 39);
+    color: #fff; 
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'SignikaNegative-Regular'
+}
+
+
+.contenedor_registro a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.contenedor_registro  h1{
+    font-size: 30px;   
+    font-family: 'ZCOOLKuaile-Regular';
+
+}
+
+.botonregistro{
+    width: 30%;
+    height: 50px;
+    background: rgba(37, 37, 39);
+    font-size: 18px;
+    color: #fff;
+    border-radius: 15px;
+}
+.botonregistro:hover{
+    width: 30%;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    text-decoration: underline;
+    border: solid  5px rgba(37, 37, 39);
+    
+}

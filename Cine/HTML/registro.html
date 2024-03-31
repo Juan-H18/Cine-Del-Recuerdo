@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="icon" href="../IMAGENES/logorojo.png">
+    <title>Registro</title>
+</head>
+    
+<body>
+
+  <div class="navbar">
+    <a href="inicio.html">
+    <div>
+      <img src="../IMAGENES/logo.png" alt="Logo">
+    </div>
+    </a>
+    <div class="navbar-titulo">
+      <h1>Cine Del Recuerdo</h1>
+    </div>
+    <div>
+      <div class="navbar-botones">
+        <a href="registro.html"><button class="boton">Registrarse</button></a>
+        <a href="iniciarsesion.html"><button class="boton">Iniciar sesión</button></a>
+      </div>
+      <div class="barra-busqueda">
+        <input type="text" placeholder="Buscar...">
+        <button class="boton">Buscar</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="contenedor3">
+  <div class="contenedor_registro">
+    <h1>Registrate Ahora!!</h1>
+<br><br>
+
+    <form action="" method="POST">
+      <input class="inputs" type="text"  name="nombre" placeholder="Ingrese su Nombre." required><br><br>
+
+      <input class="inputs" type="text"  name="apellidos" placeholder="Ingrese sus Apellidos." required><br><br>
+      
+      <input class="inputs" type="email" name="correo" placeholder="Ingrese su Correo." required><br><br>
+
+      <input class="inputs" type="password"  name="contrasena" placeholder="Cree una Contraseña." required><br><br>
+
+      <input class="inputs" type="password"  name="confirmar_contrasena" placeholder="Confirme su Contraseña" required><br><br>
+
+
+
+      <input type="checkbox" class="aceptar_terminos" name="aceptar_terminos" required>
+      <a href="terminos_condiciones.html" target="_blank" onclick="window.open(this.href, 'popupwindow', 'width=600,height=400,scrollbars,resizable'); return false;">Términos y Condiciones</a><br><br>
+
+
+
+      <input class="botonregistro" type="submit" value="Registrarse">
+  </form>
+  <br>
+  <h2><a href="../html/iniciarsesion.html">¿Ya tienes cuenta?</a></h2>
+</div>
+        
+  </div>
+</section>
+    
+</body>
+</html>
